@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           Brainly trial ad remover
+@namespace      github.com/bsoyka
+@description    Removes the nav bar and floating banner trial ads on Brainly.com
+@version        1.0.0
+@author         Ben Soyka
+@updateURL      https://raw.githubusercontent.com/bsoyka/brainly-trial-ad-remover/master/main.user.css
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("brainly.com") {
+    /* Nav bar button */
+    button[data-test="navigation_payments"] {
+        display: none;
+    }
+
+    /* Homepage floating banner */
+    div[class*="BrainlyPlusToaster__section"] {
+        display: none;
+    }
+}
